@@ -14,9 +14,9 @@ if a == 1:
     operation = int(input("Введите номер операции"))
     if operation == 1:  # Операция сравнивается с её номером и выполняется соотвецтвенное действие, вслед за чем
         # происходит вывод итога данной операции
-        print(number1 / 100)
+        print(number1 / 1000)
     elif operation == 2:
-        print(number1 * 100)
+        print(number1 * 1000)
     elif operation == 3:
         print(number1 / 100)
     elif operation == 4:
@@ -31,10 +31,9 @@ elif a == 2:
     print("3. Вычислять остаток от деления")
     print("4. Выполнять целочисленное деление")
     print("5. Возводить в степень")
-    operation = input("Введите номер операции: ")
+    operation = int(input("Введите номер операции: "))
     if operation == 1:  # Операция сравнивается с её номером и выполняется соотвецтвенное действие, вслед за чем
-        # происходит вывод итога данной операции
-        print(number1 * number2)
+        print(number1 * number2) # происходит вывод итога данной операции
     elif operation == 2:
         print(number1 / number2)
     elif operation == 3:
@@ -58,7 +57,7 @@ elif a == 3:
 
 
 elif a == 4:
-    number1 = int(input("Введите число которое хотите перевести в деятичную систему счисления:"))
+    number1 = input("Введите число которое хотите перевести в деятичную систему счисления:")
     number2 = int(input("Введите систему счисления вашего числа:"))
     # noinspection PyTypeChecker
     print(int(number1, number2))  # С помощью функции int переводим число из любой системы
